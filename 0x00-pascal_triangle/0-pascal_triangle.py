@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+
+
 def pascal_triangle(n):
     """Creats Pascal's triangle upto the `n`th level
 
