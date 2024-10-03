@@ -1,8 +1,12 @@
 #!/usr/bin/python3
+"""
+This script contains a function to generate Pascal's triangle up to the nth row.
+The triangle is represented as a list of lists of integers.
+"""
 
 
 def pascal_triangle(n):
-    """Creats Pascal's triangle upto the `n`th level
+    """Creates Pascal's triangle upto the `n`th level
 
         Args:
             n (number): The number of levels to show
