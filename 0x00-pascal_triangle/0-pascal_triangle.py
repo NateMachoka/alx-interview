@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This script contains a function to generate Pascal's triangle up to the nth row.
+A function to generate Pascal's triangle up to the nth row.
 The triangle is represented as a list of lists of integers.
 """
 
