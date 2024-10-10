@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 """
 Function determines whether all the boxes in a list of lists can be unlocked.
-Each box contains keys to other boxes. You start with the first box unlocked and
+Each box contains keys to other boxes. You start with the first box unlocked
 must find keys to unlock all other boxes.
 
 The function returns True if all boxes can be unlocked, else it returns False.
 """
+
 
 def canUnlockAll(boxes):
     """
@@ -19,7 +20,6 @@ def canUnlockAll(boxes):
     unlocked = [False] * n
     unlocked[0] = True
     keys = [0]
-
 
     while keys:
         current_box = keys.pop()
