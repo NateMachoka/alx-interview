@@ -1,5 +1,10 @@
 #!/usr/bin/python3
+"""
+The N queens puzzle
+"""
+
 import sys
+
 
 def print_solution(board):
     """Print the board configuration."""
@@ -10,6 +15,7 @@ def print_solution(board):
                 solution.append([row, col])
     print(solution)
 
+
 def is_safe(board, row, col):
     """Check if a queen can be placed at board[row][col]."""
     for i in range(row):
@@ -18,6 +24,7 @@ def is_safe(board, row, col):
            board[i] + i == col + row:
             return False
     return True
+
 
 def solve_nqueens(board, row):
     """Solve the N Queens problem using backtracking."""
@@ -30,6 +37,7 @@ def solve_nqueens(board, row):
             board[row] = col
             solve_nqueens(board, row + 1)
             board[row] = -1  # Backtrack
+
 
 def main():
     """Main entry point for the program."""
@@ -49,6 +57,7 @@ def main():
 
     board = [-1] * n
     solve_nqueens(board, 0)
+
 
 if __name__ == "__main__":
     main()
